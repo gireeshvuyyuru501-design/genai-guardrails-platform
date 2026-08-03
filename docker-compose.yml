@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    container_name: genai-guardrails-api
+    ports:
+      - "8000:8000"
+    environment:
+      LLM_PROVIDER: mock
+      AUDIT_FILE: data/guardrail_events.jsonl
+    volumes:
+      - ./data:/app/data
