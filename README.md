@@ -130,15 +130,6 @@ docker compose down
 
 ### Videos
 
-- [Automated evaluation](assets/demo/04-automated-evaluation.mp4)
-- [Guardrails overview](assets/demo/05-guardrails-overview.mp4)
-- [Guardrail status metrics](assets/demo/06-guardrail-status-metrics.mp4)
-- [Harmful request blocked](assets/demo/07-harmful-request-blocked.mp4)
-- [PII redaction](assets/demo/08-pii-redaction.mp4)
-- [Prompt injection blocked](assets/demo/09-prompt-injection-blocked.mp4)
-- [Safe redaction flow](assets/demo/10-safe-redaction-flow.mp4)
-- [Safe request flow](assets/demo/11-safe-request-flow.mp4)
-- [Streamlit dashboard](assets/demo/12-streamlit-dashboard.mp4)
 
 ## Repository details
 

@@ -5,3 +5,5 @@ __pycache__/
 .env
 data/guardrail_events.jsonl
 .DS_Store
+
+assets/demo/*.mp4
