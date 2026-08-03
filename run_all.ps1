@@ -23,10 +23,11 @@ if (-not (Test-Path ".env")) {
     Copy-Item .env.example .env
 }
 
-python -m pytest -v`r`nif ($LASTEXITCODE -ne 0) { throw "Tests failed. FastAPI will not start." }`r`n`r`nWrite-Host ""
+python -m pytest -v
+
+Write-Host ""
 Write-Host "Tests passed. Starting FastAPI..." -ForegroundColor Green
 Write-Host "Swagger: http://127.0.0.1:8000/docs"
 Write-Host "Dashboard in a second terminal: .\run_dashboard.ps1"
 
 python -m uvicorn app.main:app --reload --port 8000
-

@@ -1,0 +1,10 @@
+[project]
+name = "genai-guardrails-platform"
+version = "1.0.0"
+description = "Standalone GenAI guardrails platform."
+requires-python = ">=3.11"
+authors = [{ name = "Girish Vuyyuru" }]
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
