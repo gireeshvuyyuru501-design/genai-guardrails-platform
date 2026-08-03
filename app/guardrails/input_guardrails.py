@@ -17,9 +17,7 @@ PROMPT_INJECTION_PATTERNS = [
 
 RESTRICTED_PATTERNS = [
     r"\b(?:make|build)\s+(?:a\s+)?bomb\b",
-    r"\b(?:make|build)\s+(?:a\s+)?weapon\b",
-    
-    
+    r"\bbuild\s+(a\s+)?weapon\b",
     r"\bsteal\s+(a\s+)?password\b",
     r"\bwrite\s+(a\s+)?ransomware\b",
     r"\bdeploy\s+(a\s+)?keylogger\b",
@@ -155,4 +153,3 @@ def run_input_guardrails(text: str) -> InputOutcome:
         blocked=injection_found or restricted_found,
         checks=checks,
     )
-
